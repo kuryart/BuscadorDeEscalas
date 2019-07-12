@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F80629D0-A495-4026-A33C-9C8C9D4231F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BuscadorDeEscalas</RootNamespace>
+    <AssemblyName>BuscadorDeEscalas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Acorde.cs" />
+    <Compile Include="Class\Calculos.cs" />
+    <Compile Include="Class\Escala.cs" />
+    <Compile Include="Class\Intervalo.cs" />
+    <Compile Include="Class\Intervalos.cs" />
+    <Compile Include="Class\Nota.cs" />
+    <Compile Include="Class\Notas.cs" />
+    <Compile Include="Teste\TeclaTeste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teste\TeclaTeste.Designer.cs">
+      <DependentUpon>TeclaTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teste\TeclaTesteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teste\TeclaTesteForm.Designer.cs">
+      <DependentUpon>TeclaTesteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BuscadorDeEscala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BuscadorDeEscala.Designer.cs">
+      <DependentUpon>BuscadorDeEscala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChromaticCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChromaticCircle.Designer.cs">
+      <DependentUpon>ChromaticCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeradorDeCampoHarmonicocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GeradorDeCampoHarmonicocs.Designer.cs">
+      <DependentUpon>GeradorDeCampoHarmonicocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeradorDeAcorde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GeradorDeAcorde.Designer.cs">
+      <DependentUpon>GeradorDeAcorde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeradorDeIntervalos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GeradorDeIntervalos.Designer.cs">
+      <DependentUpon>GeradorDeIntervalos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeradorDeEscala_Guitarra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GeradorDeEscala_Guitarra.Designer.cs">
+      <DependentUpon>GeradorDeEscala_Guitarra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeradorDeEscala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GeradorDeEscala.Designer.cs">
+      <DependentUpon>GeradorDeEscala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\IntervalsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\IntervalsTable.Designer.cs">
+      <DependentUpon>IntervalsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\IteradorDeIntervalos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\IteradorDeIntervalos.Designer.cs">
+      <DependentUpon>IteradorDeIntervalos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Teste\TeclaTeste.resx">
+      <DependentUpon>TeclaTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teste\TeclaTesteForm.resx">
+      <DependentUpon>TeclaTesteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BuscadorDeEscala.resx">
+      <DependentUpon>BuscadorDeEscala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChromaticCircle.resx">
+      <DependentUpon>ChromaticCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GeradorDeCampoHarmonicocs.resx">
+      <DependentUpon>GeradorDeCampoHarmonicocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GeradorDeAcorde.resx">
+      <DependentUpon>GeradorDeAcorde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GeradorDeIntervalos.resx">
+      <DependentUpon>GeradorDeIntervalos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GeradorDeEscala_Guitarra.resx">
+      <DependentUpon>GeradorDeEscala_Guitarra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GeradorDeEscala.resx">
+      <DependentUpon>GeradorDeEscala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\IntervalsTable.resx">
+      <DependentUpon>IntervalsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\IteradorDeIntervalos.resx">
+      <DependentUpon>IteradorDeIntervalos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro.jpg" />
+    <Content Include="XML\scales.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeclaProjeto\TeclaProjeto.csproj">
+      <Project>{4bbfdd86-a73f-45ad-9c28-efa70bef3fc6}</Project>
+      <Name>TeclaProjeto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

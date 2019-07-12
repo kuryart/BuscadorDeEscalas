@@ -1,0 +1,8 @@
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\bin\Debug\TeclaProjeto.dll
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\bin\Debug\TeclaProjeto.pdb
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\obj\Debug\TeclaProjeto.csprojAssemblyReference.cache
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\obj\Debug\TeclaProjeto.csproj.CoreCompileInputs.cache
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\obj\Debug\TeclaProjeto.dll
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\obj\Debug\TeclaProjeto.pdb
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\obj\Debug\TeclaProjeto.Tecla.resources
+C:\Users\PauloCezar\source\repos\BuscadorDeEscalas\TeclaProjeto\obj\Debug\TeclaProjeto.csproj.GenerateResource.cache

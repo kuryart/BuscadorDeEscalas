@@ -1,0 +1,28 @@
+- Se selecionado dim, ou aug, desabilita seleção das quintas;
+- Se selecionada pelo menos uma nota de extensão, habilita o add;
+- O add tira todas as notas de extensão anteriores e deixa apenas a última. Sem o add, todas as notas de extensão anteriores são selecionadas também;
+- Para cada nota de extensão selecionada, seu respectivo modificador é ativado;
+
+
+- Tonica 
+ - Terça menor / Terça maior / Sus2 / Sus4
+  - Quinta / Quinta justa / Quinta aumentada
+   - Sexta / Sétima maior / Sétima menor
+    - Nona / Nona aumentada / nona diminuta
+     - Décima primeira / décima primeira aumentada / décima primeira diminuta
+      - Décima terceira / décima terceira aumentada / décima terceira diminuta
+   
+
+(0, "T");
+(1, "2b");
+(2, "2");
+(3, "3m");
+(4, "3M");
+(5, "4");
+(6, "5b");
+(7, "5");
+(8, "5#");
+(9, "6");
+(10, "7");
+(11, "7M");
+
